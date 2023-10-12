@@ -1,5 +1,6 @@
 import math
 
+
 def czy_pierwsza(n):
     if n <= 1:
         return False
@@ -14,6 +15,7 @@ def czy_pierwsza(n):
         i += 6
     return True
 
+
 def liczby_pierwsze_do_n(n):
     if n <= 1:
         return []
@@ -23,7 +25,8 @@ def liczby_pierwsze_do_n(n):
             liczby_pierwsze.append(i)
     return liczby_pierwsze
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input("Podaj liczbę całkowitą: "))
     liczby_pierwsze = liczby_pierwsze_do_n(n)
     for liczba in liczby_pierwsze:
