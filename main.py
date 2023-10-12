@@ -30,4 +30,4 @@ if __name__ == "__main__":
     n = int(input("Podaj liczbę całkowitą: "))
     liczby_pierwsze = liczby_pierwsze_do_n(n)
     for liczba in liczby_pierwsze:
-        print(liczba)
+        print(liczba, end=", ")
