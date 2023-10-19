@@ -1,7 +1,7 @@
 import math
 
 
-def czy_pierwsza(n):
+def czy_n_pierwsza(n):
     if n <= 1:
         return False
     if n <= 3:
@@ -21,7 +21,7 @@ def liczby_pierwsze_do_n(n):
         return []
     liczby_pierwsze = []
     for i in range(2, n + 1):
-        if czy_pierwsza(i):
+        if czy_n_pierwsza(i):
             liczby_pierwsze.append(i)
     return liczby_pierwsze
 

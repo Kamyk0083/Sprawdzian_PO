@@ -1,45 +1,45 @@
 import pytest
-from main import czy_pierwsza, liczby_pierwsze_do_n
+from main import czy_n_pierwsza, liczby_pierwsze_do_n
 
 
 def test_czy_pierwsza_dla_liczby_2():
-    assert czy_pierwsza(2) == True
+    assert czy_n_pierwsza(2) == True
 
 
 def test_czy_pierwsza_dla_liczby_3():
-    assert czy_pierwsza(3) == True
+    assert czy_n_pierwsza(3) == True
 
 
 def test_czy_pierwsza_dla_liczby_4():
-    assert czy_pierwsza(4) == False
+    assert czy_n_pierwsza(4) == False
 
 
 def test_czy_pierwsza_dla_liczby_17():
-    assert czy_pierwsza(17) == True
+    assert czy_n_pierwsza(17) == True
 
 
 def test_czy_pierwsza_dla_25():
-    assert czy_pierwsza(25) == False
+    assert czy_n_pierwsza(25) == False
 
 
 def test_czy_pierwsza_dla_liczby_ujemnej():
-    assert czy_pierwsza(-5) == False
+    assert czy_n_pierwsza(-5) == False
 
 
 def test_czy_pierwsza_dla_0():
-    assert czy_pierwsza(0) == False
+    assert czy_n_pierwsza(0) == False
 
 
 def test_czy_pierwsza_dla_97():
-    assert czy_pierwsza(97) == True
+    assert czy_n_pierwsza(97) == True
 
 
 def test_czy_pierwsza_dla_100():
-    assert czy_pierwsza(100) == False
+    assert czy_n_pierwsza(100) == False
 
 
 def test_czy_pierwsza_dla_97_razy_97():
-    assert czy_pierwsza(97 * 97) == False
+    assert czy_n_pierwsza(97 * 97) == False
 
 
 def test_liczby_pierwsze_do_n_dla_n_rowne_1():
